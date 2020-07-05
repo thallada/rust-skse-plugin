@@ -14,7 +14,7 @@ This is my mostly failed attempt at creating a fully-Rust [SKSE (Skyrim Script E
     checking plugin E:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\\RustSKSEPlugin.dll
     plugin E:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition\Data\SKSE\Plugins\\RustSKSEPlugin.dll (00000001 My Rust SKSE Plugin 00000001) loaded correctly
     ```
-7. Open `<Your Documents Directory>\My Games\Skyrim Special Edition\SKSE\RustSKSEPlugin.log`, and your should see some logs from the Rust SKSE plugin:
+7. Open `<Your Documents Directory>\My Games\Skyrim Special Edition\SKSE\RustSKSEPlugin.log`, and you should see some logs from the Rust SKSE plugin:
     ```
     [00:00:00.000] (8c4) INFO   SKSEPlugin_Query begin
     [00:00:00.000] (8c4) INFO   SKSEPlugin_Query successful
