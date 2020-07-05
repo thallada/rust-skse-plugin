@@ -33,7 +33,7 @@ This is my mostly failed attempt at creating a fully-Rust [SKSE (Skyrim Script E
 
 ## Where I got stuck
 
-I was trying to replicate [Ryan-rsm-McKenzie's Native SKSE64 Papyrus Interface Implementation example](https://gist.github.com/Ryan-rsm-McKenzie/cabb89a80abb09663a1288cafddd21e6) in Rust via it's FFI to C. I was able to successfully register the plugin with SKSE and even acquire a reference to the `PapyrusInterface`.
+I was trying to replicate [Ryan-rsm-McKenzie's Native SKSE64 Papyrus Interface Implementation example](https://gist.github.com/Ryan-rsm-McKenzie/cabb89a80abb09663a1288cafddd21e6) in Rust via its FFI to C. I was able to successfully register the plugin with SKSE and even acquire a reference to the `PapyrusInterface`.
 
 However, it seems like the code needs to call a C++ constructor (e.g. `new NativeFunction0<StaticFunctionTag, BSFixedString>("HelloWorld", "MyClass", HelloWorld, a_registry)`) in order to register a new native Papyrus function. Unfortunately, calling a C++ constructor requires FFI with C++, and [Rust does not support FFI with C++](https://stackoverflow.com/a/45540511).
 
